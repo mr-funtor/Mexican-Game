@@ -27,8 +27,7 @@ main{
 	
 }
 
-#second-player,
-#first-player{
+#second-player{
 	background: yellow;
 	height:100%;
 	width:100%;
