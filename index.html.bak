@@ -13,7 +13,9 @@
 	<main>
 		<div id="playing-area">
 			<section id="second-player">
-			
+				<article class="playing-card">
+				
+				</article>
 			</section>
 			
 			<section id="card-table">
