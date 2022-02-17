@@ -16,6 +16,22 @@
 				<article class="playing-card">
 				
 				</article>
+				
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
 			</section>
 			
 			<section id="card-table">
@@ -23,7 +39,21 @@
 			</section>
 			
 			<section id="first-player">
-			
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
+				
+				<article class="playing-card">
+				
+				</article>
 			</section>
 		
 		</div>
