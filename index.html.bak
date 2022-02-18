@@ -13,11 +13,11 @@
 	<main>
 		<div id="playing-area">
 			<section id="second-player">
-				<article class="playing-card">
+				<article class="playing-card" draggable="true">
 				
 				</article>
 				
-				<article class="playing-card">
+				<article class="playing-card" draggable="true">
 				
 				</article>
 				
@@ -39,6 +39,10 @@
 			</section>
 			
 			<section id="first-player">
+				<article class="playing-card">
+				
+				</article>
+				
 				<article class="playing-card">
 				
 				</article>
