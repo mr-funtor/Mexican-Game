@@ -1,8 +1,6 @@
 const playerCards=document.querySelectorAll('.playing-card');
-const cardCountDisplay=document.getElementById('card-count-display');
 
-let presentTableCard="funmi";
-let cardCount=0;
+let presentTableCard="funmi"
 
 playerCards.forEach((card)=>{
 	card.addEventListener('click',crossCheckCard)
@@ -15,8 +13,6 @@ function crossCheckCard(e){
 	if(e.currentTarget.dataset.cardid===presentTableCard){
 		e.currentTarget.style.backgroundColor='coral';
 		e.currentTarget.style.pointerEvents='none';
-		cardCount++;
-		cardCountDisplay.innerText=cardCount;
 	}
 	
 	

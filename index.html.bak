@@ -13,22 +13,22 @@
 	<main>
 		<div id="playing-area">
 			<section id="game-play-panel">
-				<h1>Card Count: </h1>
+				<h1 id="card-count-display">Card Count: </h1>
 				<button >Loteria</button>
 			</section>
 			
 			<section id="card-table">
-				<article class="playing-card" draggable="true">
+				<article class="playing-card-table" draggable="true" >
 				
 				</article>
 			</section>
 			
 			<section id="first-player">
-				<article class="playing-card" draggable="true">
+				<article class="playing-card" draggable="true" data-cardid="funmi">
 				
 				</article>
 				
-				<article class="playing-card"draggable="true">
+				<article class="playing-card"draggable="true" data-cardid="funmi">
 				
 				</article>
 				
@@ -48,5 +48,7 @@
 		</div>
 	
 	</main>
+	
+	<script src="./js/main.js"></script>
 </body>
 </html>
