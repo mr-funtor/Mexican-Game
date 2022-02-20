@@ -13,8 +13,8 @@
 	<main>
 		<div id="playing-area">
 			<section id="game-play-panel">
-				<h1 id="card-count-display">Card Count: </h1>
-				<button >Loteria</button>
+				<h1 >Card Count: <span id="card-count-display">0</span></h1>
+				<button id="loteria-button" >Loteria</button>
 			</section>
 			
 			<section id="card-table">

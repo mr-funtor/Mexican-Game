@@ -17,7 +17,7 @@ main{
 }
 
 #playing-area{
-	background:coral;
+	/* background:coral; */
 	width:60%;
 	height: 100%;
 	margin:auto;
@@ -37,10 +37,13 @@ main{
 	align-items:center;
 }
 
-#game-play-panel>button{
+#loteria-button{
 	width:130px;
 	height: 40px;
 	font-size: 22px;
+	border:none;
+	/* box-shadow: 2px 2px 2px 1px grey,-2px -2px 2px 0.5px grey; */
+	cursor:pointer;
 }
 
 #card-table{
@@ -51,7 +54,7 @@ main{
 
 #second-player,
 #first-player{
-	background: yellow;
+	/* background: yellow; */
 	height:100%;
 	width:100%;
 	display:grid;
@@ -60,7 +63,10 @@ main{
 }
 
 .playing-card{
-	background:blue;
+	background: 0px/cover no-repeat;
+	background-image:url(../images/2.png);
+	background-size: 100px;
+	background-position:center;
 	height:100%;
 	width:100%;
 	border:none;
