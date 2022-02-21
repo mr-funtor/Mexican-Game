@@ -77,7 +77,11 @@ main{
 }
 
 .playing-card-table{
-	background:blue;
+	background: 0px/cover no-repeat;
+	background-size: 120px;
+	background-position:center;
+	
+	
 	height: 200px;
 	width:180px;
 	

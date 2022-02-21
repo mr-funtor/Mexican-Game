@@ -1,5 +1,6 @@
 const playerCards=document.querySelectorAll('.playing-card');
 const cardCountDisplay=document.getElementById('card-count-display');
+const tableCard=document.querySelector('.playing-card-table');
 
 let presentTableCard="funmi";
 let cardCount=0;
@@ -32,9 +33,33 @@ const allCards=[
 		id:'the8',
 		theImage:'./images/8.png',
 	},
+	{
+		id:'the9',
+		theImage:'./images/9.png',
+	},
+	{
+		id:'the10',
+		theImage:'./images/10.png',
+	},
+	{
+		id:'theA',
+		theImage:'./images/A.png',
+	},
+	{
+		id:'theJ',
+		theImage:'./images/J.png',
+	},
+	{
+		id:'theJ',
+		theImage:'./images/K.png',
+	},
+	{
+		id:'theJ',
+		theImage:'./images/Q.png',
+	},
 ]
 
-//Randomise card
+//Randomise cards for the player
 allCards.sort(()=>0.5-Math.random());
 
 
@@ -54,6 +79,58 @@ playerCards.forEach((card,index)=>{
 })
 
 
+//PICKS RANDOM CARD FOR THE GAME TABLE
+let cardsOnTable=[];
+// let initialState=true;
+function gameTable(){
+	let randomIndex=Math.floor(Math.random()*allCards.length );
+	let cardId=allCards[randomIndex]['id'];
+	let cardImage=allCards[randomIndex]['theImage'];
+	tableCard.style.backgroundImage=`url(${cardImage})`;
+	
+	presentTableCard=cardId;
+	cardsOnTable.push(cardId);
+	
+	randomiseTheTableCard()
+}
+
+gameTable()
+
+function randomiseTheTableCard(){
+	allCards.sort(()=>0.5-Math.random());
+	let newIndex=0;
+	
+	setInterval(()=>{
+		if(newIndex>=allCards.length-1){
+			allCards.sort(()=>0.5-Math.random());
+			newIndex=0;
+			cardsOnTable=[];
+			console.log('afresh')
+		}
+		
+		let cardId=allCards[newIndex]['id'];
+		
+		//checks if the card has been played before
+		if(cardsOnTable.includes(cardId)){
+			newIndex++;
+			cardId=allCards[newIndex]['id'];
+			console.log('inside')
+		}
+		
+		cardsOnTable.push(cardId);
+		presentTableCard=cardId;
+		let cardImage=allCards[newIndex]['theImage'];
+		tableCard.style.backgroundImage=`url(${cardImage})`;
+		
+		
+		newIndex++
+	},2000)
+	
+	
+}
+
+
+//CHECKS CARD WHEN PLAYER CLICKS
 function crossCheckCard(e){
 	
 	if(e.currentTarget.dataset.cardid===presentTableCard){

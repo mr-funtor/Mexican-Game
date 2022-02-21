@@ -63,8 +63,7 @@ main{
 }
 
 .playing-card{
-	background: 0px/cover no-repeat;
-	background-image:url(../images/2.png);
+	background:url(../images/2.png) 0px/cover no-repeat;
 	background-size: 100px;
 	background-position:center;
 	height:100%;
@@ -78,7 +77,11 @@ main{
 }
 
 .playing-card-table{
-	background:blue;
+	background: 0px/cover no-repeat;
+	background-size: 150px;
+	background-position:center;
+	
+	
 	height: 200px;
 	width:180px;
 	
