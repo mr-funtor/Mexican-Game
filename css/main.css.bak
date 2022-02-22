@@ -78,7 +78,7 @@ main{
 
 .playing-card-table{
 	background: 0px/cover no-repeat;
-	background-size: 150px;
+	background-size: 120px;
 	background-position:center;
 	
 	
@@ -89,6 +89,16 @@ main{
 	border-radius:10px;
 	overflow:hidden;
 }
+
+
+/* THE HOME PAGE */
+.the-homepage{
+	background: skyblue;
+	position:fixed;
+	height:100%;
+	width:100%;
+}
+
 
 
 @media(max-width:1000px){

@@ -91,6 +91,18 @@ main{
 }
 
 
+/* THE HOME PAGE */
+.the-homepage{
+	background: skyblue;
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+
+
 @media(max-width:1000px){
 	#playing-area{
 		width:80%;

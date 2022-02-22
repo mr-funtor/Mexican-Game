@@ -32,7 +32,7 @@
 				
 				</article>
 				
-				<article class="playing-card" draggable="true">
+				<article class="playing-card" draggable="true" >
 				
 				</article>
 				
@@ -46,6 +46,10 @@
 			</section>
 		
 		</div>
+		
+		<section class="the-homepage">
+		
+		</section>
 	
 	</main>
 	
