@@ -2,7 +2,7 @@ const playerCards=document.querySelectorAll('.playing-card');
 const cardCountDisplay=document.getElementById('card-count-display');
 const tableCard=document.querySelector('.playing-card-table');
 
-let presentTableCard="funmi";
+let presentTableCard="";
 let cardCount=0;
 const allCards=[
 	{
