@@ -157,3 +157,17 @@ function loteriaCheck(){
 	console.log('not done')
 }
 
+
+//BOT LOGIC
+function botLogic(){
+	allCards.sort(()=>0.5-Math.random());
+	let shuffledIds=[];
+	
+	for(let i=0;i<5;i++){
+		shuffledIds.push(allCards[i]['id']);
+	}
+	
+}
+
+botLogic()
+
